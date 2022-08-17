@@ -1,0 +1,23 @@
+{
+  "name": "leanpub-monitoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules && rm -rf dist",
+    "zip": "cd dist && zip -r cloudwatch.zip",
+    "build": "npm i && webpack && npm run zip"
+  },
+  "dependencies": {
+    "fp-ts": "^2.12.2"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.1195.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
